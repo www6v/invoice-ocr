@@ -14,6 +14,14 @@ from modelscope.utils.constant import Tasks
 from config import schema,max_pixels,min_pixels,json_pattern
 from transformers import Qwen2VLForConditionalGeneration, AutoProcessor as tf_AutoProcessor
 from qwen_vl_utils import process_vision_info
+import torch
+
+import torch
+
+# 设置显存占用比例为 50%
+torch.cuda.set_per_process_memory_fraction(0.7, device=0)  # 0.5表示50%显存
+
+
 
 # uie模型
 ie_base = Taskflow(task='information_extraction', model='uie-base', task_path='/data/llm/models/uie_information_extraction/checkpoint/model_best', max_seq_len=1024) # 基础模型-微调
@@ -37,7 +45,7 @@ ocr = PaddleOCR(lang="ch",
                )
 
 qwen_model = Qwen2VLForConditionalGeneration.from_pretrained("/data/llm/models/Qwen2-VL-7B-Instruct", torch_dtype="auto", device_map="auto", offload_buffers=True)
-processor = tf_AutoProcessor.from_pretrained("/data/llm/models/Qwen2-VL-2B-Instruct", min_pixels=min_pixels, max_pixels=max_pixels)
+processor = tf_AutoProcessor.from_pretrained("/data/llm/models/Qwen2-VL-7B-Instruct", min_pixels=min_pixels, max_pixels=max_pixels)
 
 def ocr_result(img_path):
 # load dataset
@@ -95,6 +103,7 @@ def pdf2img(pdf_name, save_dir_path, correct_flag=True):
         # 保存每一页到图片
         pix.save(os.path.join(save_dir_path, f"{page.number}.png"), jpg_quality=300)
         if correct_flag:
+            logging.info("图片执行校正")
             correction(image_name=f"{page.number}.png", save_dir_path=save_dir_path)
 
 
@@ -203,3 +212,12 @@ def qwen2_vl(messages):
     print("AAA", matches)
     res = json.loads(matches[0])
     return res
+
+
+if __name__ == "__main__":
+    import pandas as pd
+    pdf_path = r'/data/jupyterfile/wwk/名单/截至2024年7月31日持续逾期名单.pdf'
+    res = parse_pdf(pdf_path)
+    cust_df = pd.DataFrame(res['custList'])
+    cust_df.to_excel('/data/jupyterfile/wwk/名单/截至2024年7月31日持续逾期名单.xlsx', index=False)
+    print(cust_df.head())

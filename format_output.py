@@ -184,21 +184,24 @@ def output_contract(png_list, save_dir_path):
     else:
         trade_type = ""
     ocr_res_dict['contractTradeType'] = trade_type
-
-    contract_amt_chn = re.findall(hans_num_pattern,
-                               output_dict.get("合同总金额", ''))
-    contract_amt_num = re.findall(amt_num_pattern,
-                            output_dict.get("合同总金额", ''))
-    if contract_amt_chn:
-        contract_amt = cn2an.cn2an(contract_amt_chn[0].replace("圆","元").replace("园","元"), "smart")
-    elif contract_amt_num:
-        contract_amt = contract_amt_num[0]
-    else:
-        contract_amt = ""
+    try:
+        contract_amt = cn2an.cn2an(output_dict.get("合同总金额", '').replace(" ","").replace("圆","元").replace("园","元"), "smart")
+    except:
+        contract_amt_chn = re.findall(hans_num_pattern,
+                                output_dict.get("合同总金额", ''))
+        contract_amt_num = re.findall(amt_num_pattern,
+                                output_dict.get("合同总金额", ''))
+        if contract_amt_chn:
+            contract_amt = cn2an.cn2an(contract_amt_chn[0].replace("圆","元").replace("园","元"), "smart")
+        elif contract_amt_num:
+            contract_amt = contract_amt_num[0]
+        else:
+            contract_amt = ""
     ocr_res_dict['contractAmt'] = contract_amt
 
     ocr_res_dict['buyerName'] = output_dict.get("购买方名称", '')
     ocr_res_dict['sellerName'] = output_dict.get("销售方名称", '')
     ocr_res_dict['buyerSocialNo'] = output_dict.get("购买方统一社会信用码", '')
     ocr_res_dict['sellerSocialNo'] = output_dict.get("销售方统一社会信用码", '')
+    logging.info("合同数据解析成功")
     return ocr_res_dict

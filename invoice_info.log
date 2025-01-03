@@ -130,3 +130,444 @@ INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
 INFO:root:文件类型--pdf
 INFO:root:pdf页数--3
 ERROR:root:172549848941500000001 Error: string index out of range
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:172549848941500000001 Error: CUDA out of memory. Tried to allocate 5.38 GiB. GPU 0 has a total capacity of 79.15 GiB of which 1.05 GiB is free. Process 2236602 has 14.99 GiB memory in use. Process 2245620 has 49.99 GiB memory in use. Including non-PyTorch memory, this process has 13.08 GiB memory in use. Of the allocated memory 11.51 GiB is allocated by PyTorch, and 357.67 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:172549848941500000001 Error: CUDA out of memory. Tried to allocate 5.38 GiB. GPU 0 has a total capacity of 79.15 GiB of which 40.33 GiB is free. Process 2236602 has 14.99 GiB memory in use. Including non-PyTorch memory, this process has 23.81 GiB memory in use. Of the allocated memory 22.23 GiB is allocated by PyTorch, and 365.75 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/d5cdd08d-bab5-5774-a08d-b6a71722301f
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--1
+INFO:root:矫正过程-文件路径/data/ocr-file/d5cdd08d-bab5-5774-a08d-b6a71722301f/0.png
+INFO:root:OCR解析结果电子发票(普通发票);发票号码：;24117000000488868909;开票日期：2024年08月30日;北京市税务网;购买方信息;销售方信息;名称：上海中软华腾软件系统有限公司;名;称：京东大药房（北京）有限公司;统一社会信用代码/纳税人识别号：913101046072786820;统一社会信用代码/纳税人识别号：91110113MA01UA2CXY;项目名称;规格型号;单位;数量;单价;金额税率/征收率;税额;*生物化学药品*药品;个;35.04;35.04;13%;4.56;*生物化学药品*药品;0.88;13%;0. 12;计;￥34.16;¥4.44;价税合计（大写）;叁拾捌圆陆角;（小写）￥38.60;订单号：258245513267;备;注;5
+INFO:root:UIE解析结果{'invoice-type': [{'text': '电子发票(普通发票)', 'start': 0, 'end': 10, 'probability': 0.998180983320367}], 'invoice-no': [{'text': '发票号码：;24117000000488868909', 'start': 11, 'end': 37, 'probability': 0.9988230699662815}], 'invoice-date': [{'text': '开票日期：2024年08月30日', 'start': 38, 'end': 54, 'probability': 0.9995888284038301}], 'invoice-buyer-id': [{'text': '913101046072786820', 'start': 126, 'end': 144, 'probability': 0.9839381131120462}], 'invoice-buyer': [{'text': '上海中软华腾软件系统有限公司', 'start': 77, 'end': 91, 'probability': 0.9910535194485561}], 'invoice-amt-num': [{'text': '（小写）￥38.60', 'start': 302, 'end': 312, 'probability': 0.9418248817824093}], 'invoice-seller': [{'text': '京东大药房（北京）有限公司', 'start': 96, 'end': 109, 'probability': 0.9979954620251803}], 'invoice-seller-id': [{'text': '91110113MA01UA2CXY', 'start': 161, 'end': 179, 'probability': 0.9955240012001809}], 'invoice-amt-chn': [{'text': '叁拾捌圆陆角', 'start': 295, 'end': 301, 'probability': 0.9985680878199013}], 'invoice-amt-not-tax': [{'text': '￥34.16', 'start': 273, 'end': 279, 'probability': 0.9982629477227505}], 'invoice-amt-tax': [{'text': '¥4.44', 'start': 280, 'end': 285, 'probability': 0.9971472645820683}]}
+INFO:root:日期数据--['2024年08月30日']
+INFO:root:大写数字--叁拾捌圆陆角
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--1
+INFO:root:矫正过程-文件路径/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c/0.png
+INFO:root:OCR解析结果电子发票(普通发票);发票号码：;24117000000488868909;开票日期：2024年08月30日;北京市税务网;购买方信息;销售方信息;名称：上海中软华腾软件系统有限公司;名;称：京东大药房（北京）有限公司;统一社会信用代码/纳税人识别号：913101046072786820;统一社会信用代码/纳税人识别号：91110113MA01UA2CXY;项目名称;规格型号;单位;数量;单价;金额税率/征收率;税额;*生物化学药品*药品;个;35.04;35.04;13%;4.56;*生物化学药品*药品;0.88;13%;0. 12;计;￥34.16;¥4.44;价税合计（大写）;叁拾捌圆陆角;（小写）￥38.60;订单号：258245513267;备;注;5
+INFO:root:UIE解析结果{'invoice-type': [{'text': '电子发票(普通发票)', 'start': 0, 'end': 10, 'probability': 0.998180983320367}], 'invoice-no': [{'text': '发票号码：;24117000000488868909', 'start': 11, 'end': 37, 'probability': 0.9988230699662815}], 'invoice-date': [{'text': '开票日期：2024年08月30日', 'start': 38, 'end': 54, 'probability': 0.9995888284038301}], 'invoice-buyer-id': [{'text': '913101046072786820', 'start': 126, 'end': 144, 'probability': 0.9839381131120462}], 'invoice-buyer': [{'text': '上海中软华腾软件系统有限公司', 'start': 77, 'end': 91, 'probability': 0.9910535194485561}], 'invoice-amt-num': [{'text': '（小写）￥38.60', 'start': 302, 'end': 312, 'probability': 0.9418248817824093}], 'invoice-seller': [{'text': '京东大药房（北京）有限公司', 'start': 96, 'end': 109, 'probability': 0.9979954620251803}], 'invoice-seller-id': [{'text': '91110113MA01UA2CXY', 'start': 161, 'end': 179, 'probability': 0.9955240012001809}], 'invoice-amt-chn': [{'text': '叁拾捌圆陆角', 'start': 295, 'end': 301, 'probability': 0.9985680878199013}], 'invoice-amt-not-tax': [{'text': '￥34.16', 'start': 273, 'end': 279, 'probability': 0.9982629477227505}], 'invoice-amt-tax': [{'text': '¥4.44', 'start': 280, 'end': 285, 'probability': 0.9971472645820683}]}
+INFO:root:日期数据--['2024年08月30日']
+INFO:root:大写数字--叁拾捌圆陆角
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:172549848941500000001 Error: string index out of range
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/6f4585ce-06cc-5662-9384-2d8a1ed42aa8
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/6f4585ce-06cc-5662-9384-2d8a1ed42aa8/origin.jpg
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/15d61915-f2e9-5ab9-a1c9-0d883def1856
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--8
+ERROR:root:00000138 Error: CUDA out of memory. Tried to allocate 38.28 GiB. GPU 0 has a total capacity of 79.15 GiB of which 37.89 GiB is free. Process 1563199 has 14.99 GiB memory in use. Including non-PyTorch memory, this process has 26.25 GiB memory in use. Of the allocated memory 20.64 GiB is allocated by PyTorch, and 1.98 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/e35d5dbd-f2e0-577a-8b64-3ddebfe32d6e
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/e35d5dbd-f2e0-577a-8b64-3ddebfe32d6e/origin.jpg
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--1
+INFO:root:矫正过程-文件路径/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c/0.png
+INFO:root:OCR解析结果电子发票(普通发票);发票号码：;24117000000488868909;开票日期：2024年08月30日;北京市税务网;购买方信息;销售方信息;名称：上海中软华腾软件系统有限公司;名;称：京东大药房（北京）有限公司;统一社会信用代码/纳税人识别号：913101046072786820;统一社会信用代码/纳税人识别号：91110113MA01UA2CXY;项目名称;规格型号;单位;数量;单价;金额税率/征收率;税额;*生物化学药品*药品;个;35.04;35.04;13%;4.56;*生物化学药品*药品;0.88;13%;0. 12;计;￥34.16;¥4.44;价税合计（大写）;叁拾捌圆陆角;（小写）￥38.60;订单号：258245513267;备;注;5
+INFO:root:UIE解析结果{'invoice-type': [{'text': '电子发票(普通发票)', 'start': 0, 'end': 10, 'probability': 0.998180983320367}], 'invoice-no': [{'text': '发票号码：;24117000000488868909', 'start': 11, 'end': 37, 'probability': 0.9988230699662815}], 'invoice-date': [{'text': '开票日期：2024年08月30日', 'start': 38, 'end': 54, 'probability': 0.9995888284038301}], 'invoice-buyer-id': [{'text': '913101046072786820', 'start': 126, 'end': 144, 'probability': 0.9839381131120462}], 'invoice-buyer': [{'text': '上海中软华腾软件系统有限公司', 'start': 77, 'end': 91, 'probability': 0.9910535194485561}], 'invoice-amt-num': [{'text': '（小写）￥38.60', 'start': 302, 'end': 312, 'probability': 0.9418248817824093}], 'invoice-seller': [{'text': '京东大药房（北京）有限公司', 'start': 96, 'end': 109, 'probability': 0.9979954620251803}], 'invoice-seller-id': [{'text': '91110113MA01UA2CXY', 'start': 161, 'end': 179, 'probability': 0.9955240012001809}], 'invoice-amt-chn': [{'text': '叁拾捌圆陆角', 'start': 295, 'end': 301, 'probability': 0.9985680878199013}], 'invoice-amt-not-tax': [{'text': '￥34.16', 'start': 273, 'end': 279, 'probability': 0.9982629477227505}], 'invoice-amt-tax': [{'text': '¥4.44', 'start': 280, 'end': 285, 'probability': 0.9971472645820683}]}
+INFO:root:日期数据--['2024年08月30日']
+INFO:root:大写数字--叁拾捌圆陆角
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/0b300ce4-26d1-515a-80ea-454ffffb7264
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:00000138 Error: CUDA out of memory. Tried to allocate 5.38 GiB. GPU 0 has a total capacity of 79.15 GiB of which 462.56 MiB is free. Process 1563199 has 14.99 GiB memory in use. Including non-PyTorch memory, this process has 31.63 GiB memory in use. Process 2239328 has 32.05 GiB memory in use. Of the allocated memory 22.23 GiB is allocated by PyTorch, and 5.76 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/e62d47f3-25f1-5588-830a-0e6949a939a3
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/82e041ba-cda7-50c9-830b-7b157ad574a0
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/b6f86a12-7b57-54a4-bea5-b446e85c1776
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/5276feab-06e1-529a-99c5-754502d1ce08
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/5276feab-06e1-529a-99c5-754502d1ce08/origin.jpg
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/a9fa5f6d-527e-5006-9867-519d8bd0d0da
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/98eaea60-7947-50e3-aadc-c8b80780f99f
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/98eaea60-7947-50e3-aadc-c8b80780f99f/origin.jpg
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/06ef95d3-6bb3-586b-b2ed-10bdc534c334
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/204635e1-50df-5a89-922d-59d4b727720d
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/204635e1-50df-5a89-922d-59d4b727720d/origin.jpg
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/eb7196d2-bfae-5d2a-aba0-95e234cfb09d
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/bce5b2c3-e5af-5967-bc1b-ceeff1021329
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/bce5b2c3-e5af-5967-bc1b-ceeff1021329/origin.jpg
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/f07c1439-a812-5829-b888-90a9fa4debd3
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/4307d78f-840e-5e1c-b855-78f4d31ca6d3
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/4307d78f-840e-5e1c-b855-78f4d31ca6d3/origin.jpg
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/0c70dd44-910a-5f05-8189-1d0339f8b1a6
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/be395361-2a46-5b46-9df1-b7ae1302f859
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/be395361-2a46-5b46-9df1-b7ae1302f859/origin.jpg
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/922de891-cc76-5d31-85ef-ed0ced6ae0ba
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/a6ad04e2-a6b8-56e7-b950-e3ef0e04d357
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/f60749bf-30bd-5f9f-afea-54690a554df7
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/f60749bf-30bd-5f9f-afea-54690a554df7/origin.jpg
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/2a7da133-4681-5b59-bf1c-6f37636e6175
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--1
+INFO:root:矫正过程-文件路径/data/ocr-file/2a7da133-4681-5b59-bf1c-6f37636e6175/0.png
+INFO:root:OCR解析结果北京增值税电普通发票;发票代码：011002400111;发票号码：40412579;开票日期：2024年08月11日;北京市税务局;机器编号：499098496002;校验码：15791118373589640142;名;称：上海中软华腾软件系统有限公司;购买方;03385>0>9875/961<5>048<274+>;纳税人识别号：913101046072786820;*/401*<426->*67*2>--792>37<5;地址、电话：;42+37*52094-79*4486>>/+68-1>;区;开户行及账号：;6>4*174<2701694819965-/0250+;货物或应税劳务、服务名称;规格型号;单位;数量;单;价;金额;税率;税;额;旅游服务*代订车服务费;个;26.76;26.76;6%;1.61;合;计;￥26.76;￥1.61;价税合计（大写）;贰拾捌元叁角柒分;（小写）￥28.37;名;称：北京易行出行旅游有限公司;浙行出行旅游有限司;销;备;售方;纳税人识别号：91110108735575307R;地址、电话：北京市朝阳区阜通东大街6号院3号楼12层1501010-84103027;注;开户行及账号：招商银行股份有限公司北京海淀科技金融支行999010701010603;91110108735575307R;销售方7章;收款人：;张晓娜;复核：;张莉;开票人：;郭佳;发票专用章
+INFO:root:UIE解析结果{'invoice-type': [{'text': '北京增值税电普通发票', 'start': 0, 'end': 10, 'probability': 0.9994875072603264}], 'invoice-no': [{'text': '发票号码：40412579', 'start': 29, 'end': 42, 'probability': 0.9997290553943117}], 'invoice-code': [{'text': '发票代码：011002400111', 'start': 11, 'end': 28, 'probability': 0.9995599847813352}], 'invoice-date': [{'text': '开票日期：2024年08月11日', 'start': 43, 'end': 59, 'probability': 0.9996189239383462}], 'invoice-buyer-id': [{'text': '913101046072786820', 'start': 169, 'end': 187, 'probability': 0.9975349124487494}], 'invoice-buyer': [{'text': '上海中软华腾软件系统有限公司', 'start': 114, 'end': 128, 'probability': 0.9962122408681573}], 'invoice-amt-num': [{'text': '（小写）￥28.37', 'start': 399, 'end': 409, 'probability': 0.951820206618045}], 'invoice-seller': [{'text': '北京易行出行旅游有限公司', 'start': 414, 'end': 426, 'probability': 0.8974193199144338}], 'invoice-seller-id': [{'text': '91110108735575307R', 'start': 451, 'end': 469, 'probability': 0.9987221246429101}], 'invoice-amt-chn': [{'text': '贰拾捌元叁角柒分', 'start': 390, 'end': 398, 'probability': 0.998965709742393}], 'invoice-amt-not-tax': [{'text': '￥26.76', 'start': 368, 'end': 374, 'probability': 0.9990328381361735}], 'invoice-amt-tax': [{'text': '￥1.61', 'start': 375, 'end': 380, 'probability': 0.9966698917926173}]}
+INFO:root:日期数据--['2024年08月11日']
+INFO:root:大写数字--贰拾捌元叁角柒分
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/43379af4-d25b-5ccc-9fb2-e5a76b0adb34
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/43379af4-d25b-5ccc-9fb2-e5a76b0adb34/origin.png
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/bce3eaa9-a232-5916-b67e-67269ef512ec
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/bce3eaa9-a232-5916-b67e-67269ef512ec/origin.png
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/da992c4f-74e0-5aca-8d5a-d2f477d8311c
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/01ab79d9-1b0f-574e-ac05-119230548620
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--4
+ERROR:root:00000164 Error: CUDA out of memory. Tried to allocate 9.57 GiB. GPU 0 has a total capacity of 79.15 GiB of which 31.90 GiB is free. Process 2556649 has 14.99 GiB memory in use. Including non-PyTorch memory, this process has 32.24 GiB memory in use. Of the allocated memory 26.94 GiB is allocated by PyTorch, and 578.74 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/88aea25a-edac-5146-b38a-4e0f86130d80
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--4
+ERROR:root:00000164 Error: CUDA out of memory. Tried to allocate 9.57 GiB. GPU 0 has a total capacity of 79.15 GiB of which 31.90 GiB is free. Process 2556649 has 14.99 GiB memory in use. Including non-PyTorch memory, this process has 32.24 GiB memory in use. Of the allocated memory 26.94 GiB is allocated by PyTorch, and 578.74 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/c97c82d9-b2cf-5372-90db-f954854764cf
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--4
+ERROR:root:00000164 Error: CUDA out of memory. Tried to allocate 9.57 GiB. GPU 0 has a total capacity of 79.15 GiB of which 31.90 GiB is free. Process 2556649 has 14.99 GiB memory in use. Including non-PyTorch memory, this process has 32.24 GiB memory in use. Of the allocated memory 26.94 GiB is allocated by PyTorch, and 578.74 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/9dffdf0f-3597-59db-aeb4-0cefe60865f1
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--4
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/275b6e84-e91d-51c3-9442-cfd0e9b6444b
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/275b6e84-e91d-51c3-9442-cfd0e9b6444b/origin.png
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/1ba4c0fd-c90b-54f4-a556-a8362b8f8adb
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/d451b583-7fbe-502e-8077-f3f34e2800d7
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/d451b583-7fbe-502e-8077-f3f34e2800d7/origin.png
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/8389f665-cc8f-5e83-a05a-679863492421
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--2
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/2b1164cd-6402-5e85-b143-1ef918004514
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/2b1164cd-6402-5e85-b143-1ef918004514/origin.jpg
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/393e625a-4dd9-5444-af55-73008cc31ca0
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--4
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--图片
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/941cb3c7-298a-5765-b463-4e96859bf6de
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/941cb3c7-298a-5765-b463-4e96859bf6de/origin.png
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/85b88b68-d7b6-5cfc-816b-8ff2b863fdcc
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/8ae61f8b-1ac6-5a99-8bbf-7868d6a283a8
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/8ae61f8b-1ac6-5a99-8bbf-7868d6a283a8/origin.png
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/adc07e21-c736-565a-8dd6-33899534f80e
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/37177ad6-5f15-570f-bdca-cb78760e4091
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/37177ad6-5f15-570f-bdca-cb78760e4091/origin.png
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/d76e63e6-a81b-503d-91a9-37d48e4dbdc4
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--1
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/06009f53-33f9-5865-ad78-90837a6ba337
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/06009f53-33f9-5865-ad78-90837a6ba337/origin.png
+INFO:root:OCR解析结果北京增值税电;普通发票;发票代码：011002301411;发票号码：76658645;国家税务总局;开票日期：2024年01月28日;北京市税务局;机器编号：499098496002;校验码：11612804377292930447;购买方;名;称：;重庆昕昕金属制品有限公司;6>0+849-<98>+><60840880;密;纳税人识别号：;91500107MA7FRHDK3P;码;<>9753-+2/8*>>*701/6>8-*6+44;地址、电话：;<3*3/6/**;*<5774-6--478>50+6;区;开户行及账号：;</9982<0>+01394819+41->>+540;货物或应税劳务、服务名称;规格型号;单位;数量;单;价;金额;税率;税额;旅游服务*代订车服务费;个;31.84;31.84;6%;1.91;计;￥31.84;￥1.91;价税合计（大写）;叁拾叁元柒角伍分;（小写）￥33.75;销售方;名;称：重庆鑫赛金属材料有限公司;洲行出行旅游有限司;纳税人识别号：91500112MA7FPJYX81;备;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;注;开户行及账号：中行银行重庆九龙园区支行114477979567;京;91110108735575307R;收款人：;张晓娜;复核：;张莉;开票人：;郭佳;销售方（章）;发票专用章
+INFO:root:UIE解析结果{'invoice-type': [{'text': '北京增值税电;普通发票', 'start': 0, 'end': 11, 'probability': 0.9992120394489099}], 'invoice-no': [{'text': '发票号码：76658645', 'start': 30, 'end': 43, 'probability': 0.9997186857881246}], 'invoice-code': [{'text': '发票代码：011002301411', 'start': 12, 'end': 29, 'probability': 0.9989360005320052}], 'invoice-date': [{'text': '开票日期：2024年01月28日', 'start': 51, 'end': 67, 'probability': 0.9995750636757244}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 174, 'end': 192, 'probability': 0.9984185704877113}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 127, 'end': 139, 'probability': 0.9934136601050056}], 'invoice-amt-num': [{'text': '（小写）￥33.75', 'start': 403, 'end': 413, 'probability': 0.9845749199014229}], 'invoice-seller': [{'text': '洲行出行旅游有限司', 'start': 435, 'end': 444, 'probability': 0.6421354046758836}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 452, 'end': 470, 'probability': 0.9971970721658963}], 'invoice-amt-chn': [{'text': '叁拾叁元柒角伍分', 'start': 394, 'end': 402, 'probability': 0.9991673772238521}], 'invoice-amt-not-tax': [{'text': '￥31.84', 'start': 372, 'end': 378, 'probability': 0.998247257047602}], 'invoice-amt-tax': [{'text': '￥1.91', 'start': 379, 'end': 384, 'probability': 0.9981116837582675}]}
+INFO:root:日期数据--['2024年01月28日']
+INFO:root:大写数字--叁拾叁元柒角伍分
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/605f8541-6a37-53c0-8883-e84540fbae30
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--1
+INFO:root:矫正过程-文件路径/data/ocr-file/605f8541-6a37-53c0-8883-e84540fbae30/0.png
+INFO:root:OCR解析结果电子发票;增值税专用发票);发票号码：23442000000011333392;开票日期：2023年02月08日;广东省税务;购买方信息;销售方信息;名称：常德思高技术有限公司;名称：东莞市精为智能装备有限公司;统一社会信用代码/纳税人识别号：91430700329482519W;统一社会信用代码/纳税人识别号：91441900MA57BMAE02;项目名称;规格型号;位;数量;单价;金;额;税季/征收率;税;额;*其他机械设备*自动灌胶;JW-GT80;台;0.2137168.14159292;27433.63;13%;3566.37;机;油;￥27433.63;￥3566.37;润滑;科技有限;价税合计（大）;叁万壹仟圆整;（小写）¥31000.00;DG-JW2023;131-A01;烟台龙;A;开票人：黄孟娜
+INFO:root:UIE解析结果{'invoice-type': [{'text': '电子发票;增值税专用发票)', 'start': 0, 'end': 13, 'probability': 0.9734150618658788}], 'invoice-no': [{'text': '发票号码：23442000000011333392', 'start': 14, 'end': 39, 'probability': 0.9993632234681087}], 'invoice-date': [{'text': '开票日期：2023年02月08日', 'start': 40, 'end': 56, 'probability': 0.9995434795562055}], 'invoice-buyer-id': [{'text': '91430700329482519W', 'start': 122, 'end': 140, 'probability': 0.9849506960813557}], 'invoice-buyer': [{'text': '常德思高技术有限公司', 'start': 78, 'end': 88, 'probability': 0.995433165101268}], 'invoice-amt-num': [{'text': '（小写）¥31000.00', 'start': 318, 'end': 331, 'probability': 0.9765803474848553}], 'invoice-seller': [{'text': '东莞市精为智能装备有限公司', 'start': 92, 'end': 105, 'probability': 0.997709587326284}], 'invoice-seller-id': [{'text': '91441900MA57BMAE02', 'start': 157, 'end': 175, 'probability': 0.9973522679927882}], 'invoice-amt-chn': [{'text': '叁万壹仟圆整', 'start': 311, 'end': 317, 'probability': 0.9984805383355422}], 'invoice-amt-not-tax': [{'text': '￥27433.63', 'start': 276, 'end': 285, 'probability': 0.549185819564542}], 'invoice-amt-tax': [{'text': '￥3566.37', 'start': 286, 'end': 294, 'probability': 0.985421354776804}]}
+INFO:root:日期数据--['2023年02月08日']
+INFO:root:大写数字--叁万壹仟圆整
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/73e8dfe4-d4aa-5251-b7f5-175304869fa0
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/73e8dfe4-d4aa-5251-b7f5-175304869fa0/origin.jpg
+INFO:root:OCR解析结果河南增值税专用发票;4100214130;No 07747031;4100214130;07747031;此联不;销务总指税;证使用;开票日期：;2022年07月15日;购买方;名;称：;洛阳萌兔商贸有限公司;密码区;+-00+-64>92*5/76231+50>5*4*;税总货劳函[2021]280号中钞华森实业有限公司;纳税人识别号：;91410300MA44AY4U6K;755<414*08315>5-4724/3+3>/2;>0*+-*43///30-2149<0119<9<<;地址电话：;河南省洛阳市湘西区丽新路世纪华阳花园19幢2-260115937914945;5/98577<48282939>-/**74246>;开户行及账号：;中国银行股份有限公司洛阳七里河支行262468228389;货物或应税劳务、服务名称;规格型号;单位;数量;单价;金额;税率;税额;第一联：记账联销售方记账凭证;*有色金属冶炼压延品*锌锭;吨;50;19663.71681;983185.84;13%;127814.16;合计;￥983185.84;￥127814.16;价税合计（大写）;壹佰壹拾壹万壹仟圆整;阳来道商贸有限司;（小写）;¥1111000.00;销售方;名;称：;洛阳泉道商贸有限公司;备;纳税人识别号：;91410305MA3XE3H72T;地址、电话：;91410305MA3XE3H72T;洛阳市润西区南昌路1号牡丹城805室15837934264;注;回;开户行及账号：;中国银行洛阳牡丹广场支行248167889889;发果专用章;收款人：朱红玲;复核：刘景景;开票人：;李向漫;销
+INFO:root:UIE解析结果{'invoice-type': [{'text': '河南增值税专用发票', 'start': 0, 'end': 9, 'probability': 0.9996057505907601}], 'invoice-no': [{'text': 'No 07747031', 'start': 21, 'end': 32, 'probability': 0.9984731055666103}], 'invoice-date': [{'text': '开票日期：;2022年07月15日', 'start': 67, 'end': 84, 'probability': 0.999510222850688}], 'invoice-buyer-id': [{'text': '91410300MA44AY4U6K', 'start': 171, 'end': 189, 'probability': 0.9988079992880046}], 'invoice-buyer': [{'text': '洛阳萌兔商贸有限公司', 'start': 94, 'end': 104, 'probability': 0.9960562526617309}], 'invoice-amt-num': [{'text': '（小写）;¥1111000.00', 'start': 517, 'end': 533, 'probability': 0.9838235534255695}], 'invoice-seller': [{'text': '洛阳泉道商贸有限公司', 'start': 543, 'end': 553, 'probability': 0.37604832766896834}], 'invoice-seller-id': [{'text': '91410305MA3XE3H72T', 'start': 564, 'end': 582, 'probability': 0.9990506039620186}], 'invoice-amt-chn': [{'text': '壹佰壹拾壹万壹仟圆整', 'start': 497, 'end': 507, 'probability': 0.9988975763021273}], 'invoice-amt-not-tax': [{'text': '￥983185.84', 'start': 466, 'end': 476, 'probability': 0.9991879306977083}], 'invoice-amt-tax': [{'text': '￥127814.16', 'start': 477, 'end': 487, 'probability': 0.9980824220733311}]}
+INFO:root:日期数据--['2022年07月15日']
+INFO:root:大写数字--壹佰壹拾壹万壹仟圆整
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/ee6c0e62-e4b2-59b0-a743-fd3dbcc5dfeb
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--1
+INFO:root:矫正过程-文件路径/data/ocr-file/ee6c0e62-e4b2-59b0-a743-fd3dbcc5dfeb/0.png
+INFO:root:OCR解析结果电子发票（普通发票);发票号码：24312000000226184949;国家税务总局;开票日期：2024年07月28日;上海市税务局;购买方信息;销售方信息;名称：上海东升新材料有限公司;名称：上海新白鹿餐饮有限公司;统一社会信用代码/纳税人识别号：91310000607431720X;统一社会信用代码/纳税人识别号：91310101062586836H;项目名称;规格型号;单;位;数量;单价;金;额;税率/征收率;税;额;*餐饮服务*餐饮费;192.45;6%;11.55;计;￥192.45;￥11.55;价税合计（大写）;贰佰零肆圆整;（小写）￥204.00;备;注;开票人：曹登
+INFO:root:UIE解析结果{'invoice-type': [{'text': '电子发票（普通发票)', 'start': 0, 'end': 10, 'probability': 0.9977790482420019}], 'invoice-no': [{'text': '发票号码：24312000000226184949', 'start': 11, 'end': 36, 'probability': 0.9994682778689459}], 'invoice-date': [{'text': '开票日期：2024年07月28日', 'start': 44, 'end': 60, 'probability': 0.9995845983685463}], 'invoice-buyer-id': [{'text': '91310000607431720X', 'start': 126, 'end': 144, 'probability': 0.988586370323489}], 'invoice-buyer': [{'text': '上海东升新材料有限公司', 'start': 83, 'end': 94, 'probability': 0.9925535939616168}], 'invoice-amt-num': [{'text': '（小写）￥204.00', 'start': 274, 'end': 285, 'probability': 0.9755095358766681}], 'invoice-seller': [{'text': '上海新白鹿餐饮有限公司', 'start': 98, 'end': 109, 'probability': 0.9947734911992967}], 'invoice-seller-id': [{'text': '91310101062586836H', 'start': 161, 'end': 179, 'probability': 0.9959186996983185}], 'invoice-amt-chn': [{'text': '贰佰零肆圆整', 'start': 267, 'end': 273, 'probability': 0.9988450149324564}], 'invoice-amt-not-tax': [{'text': '￥192.45', 'start': 243, 'end': 250, 'probability': 0.9974851312911852}], 'invoice-amt-tax': [{'text': '￥11.55', 'start': 251, 'end': 257, 'probability': 0.9977969127468498}]}
+INFO:root:日期数据--['2024年07月28日']
+INFO:root:大写数字--贰佰零肆圆整
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/0e84c990-f1da-563a-91ab-7ffd3cebc3de
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/0e84c990-f1da-563a-91ab-7ffd3cebc3de/origin.png
+INFO:root:OCR解析结果重庆增值税电子专用发票;发票代码：050002000213;发票号码：04574546;国家税务总局;开票日期：2023年02月15日;重庆市税务局;机器编号：667132717017;校验码：01693862597503579999;名;称：重庆昕昕金属制品有限公司;购;密;00-/*/8185*1<*028887<111+>8-;买方;纳税人识别号：91500107MA7FRHDK3P;283>56883<15/113>13895529-58;码;地址、电话：重庆市九龙坡区石桥铺街道石新路176号1幢1-21号15086971141;/<13<>1</7272*+979*+<06*/9+2;区;开户行及账号：工商银行重庆黄桶坪支行3100026209200108876;++8+99660088+9;项目名称;规格型号;单位;数量;单价;金;额;税率;税额;*有色金属冶炼压延品*铝锭;吨;5.5;16619.4690265487;91407.08;13%;11882.92;合;计;￥91407.08;￥11882.92;价税合计（大写）;壹拾万叁仟贰佰玖拾圆整;（小写）￥103290.00;销;名;称：重庆鑫赛金属材料有限公司;纳税人识别号：91500112MA7FPJYX81;备;售;方;地址、电话：重庆市渝北区回兴街道锦华二路1号附4号15736275581;开户行及账号：中行银行重庆九龙园区支行114477979567;注;收款人：卢航;复核：高洋洋;开票人：卢航
+INFO:root:UIE解析结果{'invoice-type': [{'text': '重庆增值税电子专用发票', 'start': 0, 'end': 11, 'probability': 0.9995735027204233}], 'invoice-no': [{'text': '发票号码：04574546', 'start': 30, 'end': 43, 'probability': 0.9997445507227951}], 'invoice-code': [{'text': '发票代码：050002000213', 'start': 12, 'end': 29, 'probability': 0.999683702614945}], 'invoice-date': [{'text': '开票日期：2023年02月15日', 'start': 51, 'end': 67, 'probability': 0.999574944664726}], 'invoice-buyer-id': [{'text': '91500107MA7FRHDK3P', 'start': 178, 'end': 196, 'probability': 0.9974843434151914}], 'invoice-buyer': [{'text': '重庆昕昕金属制品有限公司', 'start': 122, 'end': 134, 'probability': 0.9971906533549912}], 'invoice-amt-num': [{'text': '（小写）￥103290.00', 'start': 489, 'end': 503, 'probability': 0.942265654511889}], 'invoice-seller': [{'text': '重庆鑫赛金属材料有限公司', 'start': 510, 'end': 522, 'probability': 0.9863032634036557}], 'invoice-seller-id': [{'text': '91500112MA7FPJYX81', 'start': 530, 'end': 548, 'probability': 0.9975473921643996}], 'invoice-amt-chn': [{'text': '壹拾万叁仟贰佰玖拾圆整', 'start': 477, 'end': 488, 'probability': 0.9992655875013909}], 'invoice-amt-not-tax': [{'text': '￥91407.08', 'start': 448, 'end': 457, 'probability': 0.9993414711384112}], 'invoice-amt-tax': [{'text': '￥11882.92', 'start': 458, 'end': 467, 'probability': 0.9982197359773579}]}
+INFO:root:日期数据--['2023年02月15日']
+INFO:root:大写数字--壹拾万叁仟贰佰玖拾圆整
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/56328bdf-d8aa-5f42-abdf-030ab093d26d
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--1
+INFO:root:矫正过程-文件路径/data/ocr-file/56328bdf-d8aa-5f42-abdf-030ab093d26d/0.png
+INFO:root:OCR解析结果电子发票;增值税专用发票);发票号码：23442000000011333392;开票日期：2023年02月08日;广东省税务;购买方信息;销售方信息;名称：常德思高技术有限公司;名称：东莞市精为智能装备有限公司;统一社会信用代码/纳税人识别号：91430700329482519W;统一社会信用代码/纳税人识别号：91441900MA57BMAE02;项目名称;规格型号;位;数量;单价;金;额;税季/征收率;税;额;*其他机械设备*自动灌胶;JW-GT80;台;0.2137168.14159292;27433.63;13%;3566.37;机;油;￥27433.63;￥3566.37;润滑;科技有限;价税合计（大）;叁万壹仟圆整;（小写）¥31000.00;DG-JW2023;131-A01;烟台龙;A;开票人：黄孟娜
+INFO:root:UIE解析结果{'invoice-type': [{'text': '电子发票;增值税专用发票)', 'start': 0, 'end': 13, 'probability': 0.9734150618658788}], 'invoice-no': [{'text': '发票号码：23442000000011333392', 'start': 14, 'end': 39, 'probability': 0.9993632234681087}], 'invoice-date': [{'text': '开票日期：2023年02月08日', 'start': 40, 'end': 56, 'probability': 0.9995434795562055}], 'invoice-buyer-id': [{'text': '91430700329482519W', 'start': 122, 'end': 140, 'probability': 0.9849506960813557}], 'invoice-buyer': [{'text': '常德思高技术有限公司', 'start': 78, 'end': 88, 'probability': 0.995433165101268}], 'invoice-amt-num': [{'text': '（小写）¥31000.00', 'start': 318, 'end': 331, 'probability': 0.9765803474848553}], 'invoice-seller': [{'text': '东莞市精为智能装备有限公司', 'start': 92, 'end': 105, 'probability': 0.997709587326284}], 'invoice-seller-id': [{'text': '91441900MA57BMAE02', 'start': 157, 'end': 175, 'probability': 0.9973522679927882}], 'invoice-amt-chn': [{'text': '叁万壹仟圆整', 'start': 311, 'end': 317, 'probability': 0.9984805383355422}], 'invoice-amt-not-tax': [{'text': '￥27433.63', 'start': 276, 'end': 285, 'probability': 0.549185819564542}], 'invoice-amt-tax': [{'text': '￥3566.37', 'start': 286, 'end': 294, 'probability': 0.985421354776804}]}
+INFO:root:日期数据--['2023年02月08日']
+INFO:root:大写数字--叁万壹仟圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/d803bbda-a9db-5e65-bd78-aa1532bb89f4
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--1
+INFO:root:执行发票任务
+INFO:root:文件路径--/data/ocr-file/98e59b57-f5b2-552c-9fe3-42ac7b94b3f0
+INFO:root:文件类型--图片
+INFO:root:矫正过程-文件路径/data/ocr-file/98e59b57-f5b2-552c-9fe3-42ac7b94b3f0/origin.jpg
+INFO:root:OCR解析结果河南增值税专用发票;4100214130;No 07747031;4100214130;国;中;07747031;此联不;销务总指彩;证使用;开票日期：;2022年07月15日;购买方;名;称：;洛阳萌兔商贸有限公司;密码区;+-00+-64>92*5/76231+50>5*4*;税总货劳函[2021]280号中钞华森实业有限公司;纳税人识别号：;91410300MA44AY4U6K;755<414*08315>5-4724/3+3>/2;>0*+-*43///30-2149<0119<9<<;地址电话：;河南省洛阳市满西区丽新路世纪华阳花园19幢2-260115937914945;5/98577<48282939>-/**74246>;开户行及账号：;中国银行股份有限公司洛阳七里河支行262468228389;货物或应税劳务、服务名称;规格型号;单位;数量;单价;金额;税率;税额;第一联：记账联销售方记账凭证;*有色金属冶炼压延品*锌锭;吨;50;19663.716814;983185.84;13%;127814.16;合计;¥983185.84;￥127814.16;价税合计（大写）;壹佰壹拾壹万壹仟圆整;（小写）;¥1111000.00;阳来道商贸有限司;销售方;名;称：;洛阳泉道商贸有限公司;备;纳税人识别号：;91410305MA3XE3H72T;地址电话：;91410305MA3XE3H72T;洛阳市润西区南昌路1号牡丹城805室15837934264;注;回;开户行及账号：;中国银行洛阳牡丹广场支行248167889889;发果专用章;收款人：朱红玲;复核：刘景景;开票人：;李向漫;销;住
+INFO:root:UIE解析结果{'invoice-type': [{'text': '河南增值税专用发票', 'start': 0, 'end': 9, 'probability': 0.9996237479562993}], 'invoice-no': [{'text': 'No 07747031', 'start': 21, 'end': 32, 'probability': 0.9987154866292016}], 'invoice-date': [{'text': '开票日期：;2022年07月15日', 'start': 71, 'end': 88, 'probability': 0.9994334666604239}], 'invoice-buyer-id': [{'text': '91410300MA44AY4U6K', 'start': 175, 'end': 193, 'probability': 0.9987596121620825}], 'invoice-buyer': [{'text': '洛阳萌兔商贸有限公司', 'start': 98, 'end': 108, 'probability': 0.9938422762824857}], 'invoice-amt-num': [{'text': '（小写）;¥1111000.00', 'start': 513, 'end': 529, 'probability': 0.9528396162527528}], 'invoice-seller': [{'text': '洛阳泉道商贸有限公司', 'start': 548, 'end': 558, 'probability': 0.48317616891717563}], 'invoice-seller-id': [{'text': '91410305MA3XE3H72T', 'start': 569, 'end': 587, 'probability': 0.9989953769133564}], 'invoice-amt-chn': [{'text': '壹佰壹拾壹万壹仟圆整', 'start': 502, 'end': 512, 'probability': 0.998971246421192}], 'invoice-amt-not-tax': [{'text': '¥983185.84', 'start': 471, 'end': 481, 'probability': 0.9993214550878236}], 'invoice-amt-tax': [{'text': '￥127814.16', 'start': 482, 'end': 492, 'probability': 0.9982295711259468}]}
+INFO:root:日期数据--['2022年07月15日']
+INFO:root:大写数字--壹佰壹拾壹万壹仟圆整
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/84b84722-d994-5d5a-b9b8-08457e642eba
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/b01edb4f-6232-504c-8182-1c4d20638557
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:00000177 Error: string index out of range
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/2f5dcf58-60b4-5457-9ac9-c00f12bb1840
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:00000177 Error: string index out of range
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/0b257006-65e7-5bce-9dc5-a0a02df18f1e
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:00000177 Error: string index out of range
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/f0867e86-a101-59a2-aedc-0c23546cadf2
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--1
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/d1d1a9e9-852e-5f7f-afe5-62971a745fba
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:00000178 Error: string index out of range
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:172549848941500000001 Error: string index out of range
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:172549848941500000001 Error: string index out of range
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:172549848941500000001 Error: string index out of range
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+ERROR:root:172549848941500000001 Error: string index out of range
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/ef3535a1-186e-5c1e-9e4f-5ecd45e16b3c
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+INFO:root:合同数据解析成功
+INFO:root:执行合同任务
+INFO:root:文件路径--/data/ocr-file/304a4b72-c193-5c8c-aae7-e4a159f9461e
+INFO:root:文件类型--pdf
+INFO:root:pdf页数--3
+INFO:root:合同数据解析成功
