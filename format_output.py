@@ -102,13 +102,17 @@ def output_invoice(save_dir_path):
             invRemark = ""
             logging.info(f"大写数字--{invoiceAmtChn}")
             try:
-                arabic_number = cn2an.cn2an(invoiceAmtChn.replace("圆","元").replace("园","元"), "smart")
+                arabic_number = cn2an.cn2an(invoiceAmtChn.replace("整","").replace("元零","元").replace(" ","").replace("角整","角").replace("圆","元").replace("园","元"), "smart")
                 invoiceAmt = str(float(arabic_number))
             except:
                 try:
                     invoiceAmt = str(float(invoiceAmt.replace("。", ".")))
                 except:
                     invoiceAmt = ""
+            
+            if (not invoiceAmtNoTax) and invoiceAmtTax and invoiceAmt:
+                invoiceAmtNoTax = float(invoiceAmt) - float(invoiceAmtTax)
+
             tmp = {"invoiceType":invoiceType,
                 "invoiceNo":invoiceNo,
                 "invoiceCode":invoiceCode,
@@ -185,16 +189,22 @@ def output_contract(png_list, save_dir_path):
         trade_type = ""
     ocr_res_dict['contractTradeType'] = trade_type
     try:
-        contract_amt = cn2an.cn2an(output_dict.get("合同总金额", '').replace(" ","").replace("圆","元").replace("园","元"), "smart")
+        contract_amt = cn2an.cn2an(output_dict.get("合同总金额", '').replace(" ","").replace("元零","元").replace("角整","角").replace("圆","元").replace("园","元"), "smart")
     except:
         contract_amt_chn = re.findall(hans_num_pattern,
                                 output_dict.get("合同总金额", ''))
         contract_amt_num = re.findall(amt_num_pattern,
                                 output_dict.get("合同总金额", ''))
-        if contract_amt_chn:
-            contract_amt = cn2an.cn2an(contract_amt_chn[0].replace("圆","元").replace("园","元"), "smart")
-        elif contract_amt_num:
-            contract_amt = contract_amt_num[0]
+        if contract_amt_chn and len(contract_amt_chn)>1:
+            try:
+                contract_amt = cn2an.cn2an(contract_amt_chn[0].replace("圆","元").replace("园","元"), "smart")
+            except:
+                contract_amt = ""
+        elif contract_amt_num and len(contract_amt_chn)>1:
+            try:
+                contract_amt = contract_amt_num[0]
+            except:
+                contract_amt = ""
         else:
             contract_amt = ""
     ocr_res_dict['contractAmt'] = contract_amt
