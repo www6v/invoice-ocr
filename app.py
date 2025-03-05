@@ -157,7 +157,6 @@ def task_list(info):
                 "retMsg": "处理成功",
                 "result": ocr_res}
     return res_info
-
 @app.post("/api/v1/extract-key-info")
 async def make_invoice_info(request: Request,
                             info: dict = Body(..., description="发票信息")):
@@ -202,17 +201,6 @@ async def make_invoice_info(request: Request,
                             result={"custList": [], "brhList":[]},
                             retStatus=1,
                             retMsg=str(e))
-    if info['taskType'] in "004":
-        logging.info(f"执行发票任务")
-        try:
-            res_info = task_invoice(info)
-        except Exception as e:
-            logging.error(f"{info['flowId']} Error: {e}")
-            res_info = dict(flowId=info['flowId'],
-                            taskType=info['taskType'],
-                            result={"invoiceList": []},
-                            retStatus=1,
-                            retMsg=str(e))            
     else:
         res_info = dict(flowId=info['flowId'],
                     taskType=info['taskType'],

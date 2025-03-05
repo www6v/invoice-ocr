@@ -3,7 +3,7 @@ import re
 import cn2an
 import logging
 from ocr import ie_base, ocr_result
-#from vlm import qwen2_vl
+from vlm import qwen2_vl
 from config import hans_num_pattern, code_pattern, y_m_d_pattern, letter_num_pattern, amt_num_pattern,contract_prompt, json_pattern
 
 def output_invoice(save_dir_path):
