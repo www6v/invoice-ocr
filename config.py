@@ -1,5 +1,3 @@
-from opt_einsum import contract
-
 zy_pattern = r'.*专用.*'
 pt_pattern = r'.*普通*'
 dz_pattern = r'电子.*(?:普通|专用).*发票'

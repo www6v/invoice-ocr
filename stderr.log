@@ -1,0 +1,37 @@
+nohup: ignoring input
+[33m[2024-12-24 17:50:15,655] [ WARNING][0m - The schema has not been set yet, please set a schema via set_schema(). More details about the setting of schema please refer to https://github.com/PaddlePaddle/PaddleNLP/blob/develop/applications/information_extraction/taskflow_text.md[0m
+[32m[2024-12-24 17:50:18,884] [    INFO][0m - We are using <class 'paddlenlp.transformers.ernie.tokenizer.ErnieTokenizer'> to load '/data/llm/models/uie_information_extraction/checkpoint/model_best'.[0m
+2024-12-24 17:50:18,914 - modelscope - INFO - initiate model from /data/llm/models/cv_resnet18_card_correction
+2024-12-24 17:50:18,915 - modelscope - INFO - initiate model from location /data/llm/models/cv_resnet18_card_correction.
+2024-12-24 17:50:18,916 - modelscope - WARNING - No preprocessor field found in cfg.
+2024-12-24 17:50:18,916 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2024-12-24 17:50:18,916 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/data/llm/models/cv_resnet18_card_correction'}. trying to build by task and model information.
+2024-12-24 17:50:18,916 - modelscope - WARNING - Find task: card-detection-correction, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2024-12-24 17:50:19,368 - modelscope - INFO - loading model from /data/llm/models/cv_resnet18_card_correction/pytorch_model.pt
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:06<00:26,  6.64s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:12<00:19,  6.44s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:18<00:11,  5.92s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:18<00:03,  3.69s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  2.44s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:18<00:00,  3.75s/it]
+Some parameters are on the meta device because they were offloaded to the cpu.
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/paddle_env/lib/python3.8/site-packages/transformers-4.45.0.dev0-py3.8.egg/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+  File "/home/ubuntu/miniconda3/envs/paddle_env/lib/python3.8/site-packages/huggingface_hub/utils/_deprecation.py", line 101, in inner_f
+    return f(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/paddle_env/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/ubuntu/miniconda3/envs/paddle_env/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/data/llm/models/Qwen2-VL-2B-Instruct'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "app.py", line 6, in <module>
+    from ocr import correction, pdf2img, parse_pdf
+  File "/home/ubuntu/wwk/invoice-ocr/ocr.py", line 40, in <module>
+    processor = tf_AutoProcessor.from_pretrained("/data/llm/models/Qwen2-VL-2B-Instruct", min_pixels=min_pixels, max_pixels=max_pixels)
+  File "/home/ubuntu/miniconda3/envs/paddle_env/lib/python3.8/site-packages/transformers-4.45.0.dev0-py3.8.egg/transformers/models/auto/processing_auto.py", line 250, in from_pretrained
+    processor_config_file = get_file_from_repo(
+  File "/home/ubuntu/miniconda3/envs/paddle_env/lib/python3.8/site-packages/transformers-4.45.0.dev0-py3.8.egg/transformers/utils/hub.py", line 555, in get_file_from_repo
+    return cached_file(
+  File "/home/ubuntu/miniconda3/envs/paddle_env/lib/python3.8/site-packages/transformers-4.45.0.dev0-py3.8.egg/transformers/utils/hub.py", line 467, in cached_file
+    raise EnvironmentError(
+OSError: Incorrect path_or_model_id: '/data/llm/models/Qwen2-VL-2B-Instruct'. Please provide either the path to a local folder or the repo_id of a model on the Hub.

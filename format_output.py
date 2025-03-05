@@ -2,8 +2,9 @@ import os
 import re
 import cn2an
 import logging
-from ocr import ie_base, ocr_result, qwen2_vl
-from config import hans_num_pattern, code_pattern, y_m_d_pattern, letter_num_pattern, amt_num_pattern,contract_prompt
+from ocr import ie_base, ocr_result
+#from vlm import qwen2_vl
+from config import hans_num_pattern, code_pattern, y_m_d_pattern, letter_num_pattern, amt_num_pattern,contract_prompt, json_pattern
 
 def output_invoice(save_dir_path):
     ocr_res_lst = []
@@ -157,7 +158,7 @@ def output_contract(png_list, save_dir_path):
                             "text":contract_prompt})
     messages = [{"role":"user",
                 "content": message_content}]
-    output_dict = qwen2_vl(messages)
+    output_dict = qwen2_vl(messages, json_pattern)
     ocr_res_dict['contractNo'] = output_dict.get("合同编号", '')
     if "订单" in output_dict.get("合同类型", ''):
         contract_type = "TIT02"

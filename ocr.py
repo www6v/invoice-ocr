@@ -12,17 +12,7 @@ from paddleocr import PaddleOCR
 from paddlenlp import Taskflow
 from modelscope.pipelines import pipeline
 from modelscope.utils.constant import Tasks
-from config import schema,max_pixels,min_pixels,json_pattern
-#from transformers import Qwen2VLForConditionalGeneration, AutoProcessor as tf_AutoProcessor
-from transformers import Qwen2_5_VLForConditionalGeneration, AutoTokenizer, AutoProcessor
-from qwen_vl_utils import process_vision_info
-import torch
-
-import torch
-
-# 设置显存占用比例为 50%
-torch.cuda.set_per_process_memory_fraction(0.7, device=0)  # 0.5表示50%显存
-
+from config import schema
 
 
 # uie模型
@@ -43,7 +33,7 @@ ocr = PaddleOCR(lang="ch",
                 det_model_dir="/data/llm/models/ch_PP-OCRv4_det_server_infer/",
                 use_angle_cls=True,
                 ocr_version='PP-OCRv4',
-                cls_model_dir="/home/ubuntu/.paddleocr/whl/cls/ch_ppocr_mobile_v2.0_cls_infer/",
+                cls_model_dir="/data/llm/models/ch_ppocr_mobile_v2.0_cls_infer/",
                 rec_model_dir="/data/llm/models/ch_PP-OCRv4_rec_server_infer/",
                 det_limit_side_len=1000,
                 warmup=True,
@@ -52,14 +42,11 @@ ocr = PaddleOCR(lang="ch",
                 rec_batch_num=10
                )
 
-qwen_model = Qwen2VLForConditionalGeneration.from_pretrained("/data/llm/models/Qwen2.5-VL-7B-Instruct", torch_dtype="auto", device_map="auto", offload_buffers=True)
-processor = tf_AutoProcessor.from_pretrained("/data/llm/models/Qwen2.5-VL-7B-Instruct", min_pixels=min_pixels, max_pixels=max_pixels)
 
 def ocr_result(img_path):
 # load dataset
     result = ocr.ocr(img_path)
     return result
-
 
 def correction(image_name, save_dir_path):
     """
@@ -240,24 +227,6 @@ def parse_pdf(pdf_path):
         res_dict["brhList"] = brh_lst
     return res_dict
 
-def qwen2_vl(messages):
-    text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-    image_inputs, video_inputs = process_vision_info(messages)
-    inputs = processor(text=[text],
-                       images=image_inputs,
-                       videos=video_inputs,
-                       padding=True,
-                       return_tensors="pt", )
-    inputs = inputs.to("cuda")
-    generated_ids = qwen_model.generate(**inputs, max_new_tokens=1024)
-    generated_ids_trimmed = [out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)]
-    output_text = processor.batch_decode(generated_ids_trimmed, skip_special_tokens=True,
-                                         clean_up_tokenization_spaces=False)
-
-    matches = re.findall(json_pattern,output_text[0], re.DOTALL)
-    print("AAA", matches)
-    res = json.loads(matches[0])
-    return res
 
 
 if __name__ == "__main__":
