@@ -2,6 +2,9 @@
 import os
 from openai import OpenAI
 
+
+##### 千问 api
+
 client = OpenAI(
     # api_key=os.getenv("DASHSCOPE_API_KEY"),
 

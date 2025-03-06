@@ -3,6 +3,7 @@
 import requests
 import json
 
+###### 硅基流动
 # 硅基流动API的URL
 api_url = "https://api.siliconflow.com/v1/images/generate"  # wrong
 

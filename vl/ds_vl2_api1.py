@@ -1,8 +1,9 @@
 import requests 
 import base64 
- 
+
+###### 硅基流动 
 # 配置API密钥（从硅基流动控制台获取）
-API_KEY = "sk-hioqapoqkyfwjobwoumzbhealcdzrxirbqkhbggcptgxvnnk"
+API_KEY = ""
  
 def image_analysis(image_path):
     # 读取图片并转换为Base64编码 
