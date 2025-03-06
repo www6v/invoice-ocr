@@ -158,11 +158,7 @@ def output_contract(png_list, save_dir_path):
                             "text":contract_prompt})
     messages = [{"role":"user",
                 "content": message_content}]
-    
-    #### 
     output_dict = qwen2_vl(messages, json_pattern)
-    filePath = f"{save_dir_path}/{png}"  ###
-
     ocr_res_dict['contractNo'] = output_dict.get("合同编号", '')
     if "订单" in output_dict.get("合同类型", ''):
         contract_type = "TIT02"
