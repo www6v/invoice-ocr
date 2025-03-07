@@ -46,7 +46,7 @@ def upload_file(file_path, user, MIME_type):
         print(f"发生错误: {str(e)}")
         return None
 
-def run_workflow(file_id, user, bizType, MIME_type, response_mode="blocking"):
+def run_workflow(file_id, user, bizType, MIME_type, response_mode="blocking") -> str:
     workflow_url = "https://www.kofe.ai/v1/workflows/run"    
     headers = {
         "Authorization": "Bearer app-mm40LkPE0iRewxyO1Ls7t6ra",
@@ -96,24 +96,8 @@ def run_workflow(file_id, user, bizType, MIME_type, response_mode="blocking"):
         return {"status": "error", "message": str(e)}
 
 
-
-if __name__ == "__main__":
-
+def bill_recognition(file_path, bizType, MIME_type):
     user = "abc-123"
-
-    
-    # file_path = r"D:\mine\work\票据code\合同信息\gxht2.png"
-    # bizType = '1'
-    # MIME_type = 'image'
-
-
-    # file_path = r"D:\mine\work\票据code\信用证\信用证样本\bohaiyinghangzheng.pdf"
-    # file_path = r"D:\mine\work\bohaiyinghangzheng.pdf"   
-    file_path = r"D:\mine\work\票据code\信用证\信用证样本\111.png"
-    bizType = '2'
-    MIME_type = 'image'
-    # MIME_type = 'application/pdf' 
-    
     
     # 上传文件
     file_id = upload_file(file_path, user, MIME_type)
@@ -121,5 +105,52 @@ if __name__ == "__main__":
         # 文件上传成功，继续运行工作流
         result = run_workflow(file_id, user, bizType, MIME_type)
         print(result)
+
+        return result
     else:
         print("文件上传失败，无法执行工作流")
+
+
+
+def extract_content(data, biz_type):
+    if biz_type == '1':
+        # 获取text1的内容
+        text_content = data['data']['outputs']['text1']
+        print(text_content)
+        print('-----')
+
+    if biz_type == '2':
+        # 获取text2的内容
+        text_content = data['data']['outputs']['text2']
+        print(text_content)
+        print('-----')        
+
+    # 由于text1中的内容是一个json字符串,需要去掉```json和```标记
+    text_json_str = text_content.replace('```json\n', '').replace('\n```', '')
+    print(text_json_str)
+    print('-----')
+
+    # 将json字符串解析为Python对象
+    text_data = json.loads(text_json_str)
+    # print(text_data)
+    # print(type(text_data))
+    print('-----')
+
+    return text_data
+
+
+if __name__ == "__main__":
+    # file_path = r"D:\mine\work\票据code\合同信息\gxht2.png"
+    # biz_type = '1'
+    # MIME_type = 'image'   
+   
+    # file_path = r"D:\mine\work\票据code\信用证\信用证样本\bohaiyinghangzheng.pdf"
+    file_path = r"D:\mine\work\票据code\信用证\信用证样本\111.png"
+    biz_type = '2'
+    MIME_type = 'image'
+    # MIME_type = 'application/pdf'    
+
+    data = bill_recognition(file_path, biz_type, MIME_type)
+
+    extract_content(data, biz_type)
+

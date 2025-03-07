@@ -3,8 +3,9 @@ import re
 import cn2an
 import logging
 from ocr import ie_base, ocr_result
-from vlm import qwen2_vl
+# from vlm import qwen2_vl
 from config import hans_num_pattern, code_pattern, y_m_d_pattern, letter_num_pattern, amt_num_pattern,contract_prompt, json_pattern
+from vl.fileRead import bill_recognition, extract_content
 
 def output_invoice(save_dir_path):
     ocr_res_lst = []
@@ -158,10 +159,17 @@ def output_contract(png_list, save_dir_path):
                             "text":contract_prompt})
     messages = [{"role":"user",
                 "content": message_content}]
+
+
+    ##### 
+    file_path = f"{save_dir_path}/{png}"  ###
+    biz_type = 1
+    MIME_type = 'image'
+    data = bill_recognition(file_path, biz_type, MIME_type)
+    extract_content(data, biz_type)
+    ##### output_dict = qwen2_vl(messages, json_pattern)
     
-    #### 
-    output_dict = qwen2_vl(messages, json_pattern)
-    filePath = f"{save_dir_path}/{png}"  ###
+    
 
     ocr_res_dict['contractNo'] = output_dict.get("合同编号", '')
     if "订单" in output_dict.get("合同类型", ''):
