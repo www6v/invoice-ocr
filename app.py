@@ -99,7 +99,8 @@ def task_contract(info):
     print(type(info))
     print(info['body']['fileId'])
 
-    file_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, info['body']['fileId']))
+    # file_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, info['body']['fileId']))
+    file_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, info['body']['fileInfos'][0]['fileId']))
     file_type = info['body']['fileInfos'][0]['fileType']
     file_content = info['body']['fileInfos'][0]['content']
     save_dir_path = os.path.join(dir_path, file_id)
