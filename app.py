@@ -95,6 +95,10 @@ def task_contract(info):
             ]
         }
     }"""
+
+    print(info)
+    print('---')
+
     file_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, info['body']['fileId']))
     file_type = info['body']['fileInfos'][0]['fileType']
     file_content = info['body']['fileInfos'][0]['content']
