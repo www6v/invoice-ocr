@@ -163,7 +163,7 @@ def output_contract(png_list, save_dir_path):
 
     ##### 
     file_path = f"{save_dir_path}/{png}"  ###
-    biz_type = 1
+    biz_type = '1' ### 字符串
     MIME_type = 'image'
     data = bill_recognition(file_path, biz_type, MIME_type)
     output_dict = extract_content(data, biz_type)
