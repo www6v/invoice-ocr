@@ -96,6 +96,9 @@ def task_contract(info):
         }
     }"""
 
+    print(type(info))
+    print(info['body']['fileId'])
+
     file_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, info['body']['fileId']))
     file_type = info['body']['fileInfos'][0]['fileType']
     file_content = info['body']['fileInfos'][0]['content']
@@ -105,7 +108,7 @@ def task_contract(info):
     print(file_id)
     print(file_type)
     print(save_dir_path)
-    
+
     print('---')
 
     # 根据源文件类型，处理成矫正后图片
