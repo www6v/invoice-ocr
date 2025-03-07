@@ -5,7 +5,7 @@ import base64
 import logging
 import uuid
 from ocr import correction, pdf2img, parse_pdf
-from format_output import output_creditLetter, output_invoice, output_contract
+from format_output import output_invoice, output_contract
 from fastapi import FastAPI, Request, Body
 from config import dir_path
 app = FastAPI()
@@ -97,6 +97,7 @@ def task_contract(info):
     }"""
 
     print(type(info))
+    # print(info['body']['fileId'])
 
     # file_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, info['body']['fileId']))
     file_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, info['body']['fileInfo']['fileId']))
@@ -133,7 +134,6 @@ def task_contract(info):
                 "result": {"contract": ocr_res}}
     return res_info
 
-
 def task_list(info):
     """
     {"flowId": "202408260000101003",
@@ -168,66 +168,6 @@ def task_list(info):
                 "retStatus": 0,
                 "retMsg": "处理成功",
                 "result": ocr_res}
-    return res_info
-
-
-
-def task_creditLetter(info):
-    # 创建文件目录
-    # info['body']是一个list目前业务逻辑只取一张
-    """    {
-        "flowId": "202408260000101002",
-        "taskType": "002",
-        "body": {
-            "fileId": "123456789012345",
-            "fileInfos": [
-                {
-                    "fileType": "jpg",
-                    "content": "aldjfoafaavnnaoijdioajflfjlkadoiejoaf 121213131312..."
-                },
-                {
-                    "fileType": "jpg",
-                    "content": "aldjfoafaavnnaoijdioajflfjlkadoiejoaf adfafafaeaaa..."
-                }
-            ]
-        }
-    }"""
-
-    print(type(info))
-
-    # file_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, info['body']['fileId']))
-    file_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, info['body']['fileInfo']['fileId']))
-    file_type = info['body']['fileInfo']['fileType']
-    file_content = info['body']['fileInfo']['content']
-    save_dir_path = os.path.join(dir_path, file_id)
-    save_origin_file(save_dir_path, file_content, file_type)
-
-    print(file_id)
-    print(file_type)
-    print(save_dir_path)
-
-    print('---')
-
-    # 根据源文件类型，处理成矫正后图片
-    if file_type in ['pdf']:
-        logging.info(f"文件类型--pdf")
-        pdf2img(pdf_name=f"origin.pdf", save_dir_path=save_dir_path, correct_flag=False)
-        ocr_res = output_creditLetter([f for f in sorted(os.listdir(save_dir_path)) if ".png" in f], save_dir_path)
-    elif file_type in ['jpeg', 'jpg', 'png', 'webp']:
-        logging.info(f"文件类型--图片")
-        ocr_res = output_creditLetter([f for f in sorted(os.listdir(save_dir_path))], save_dir_path)
-    else:
-        return {"flowId": info['flowId'],
-                "taskType": info['taskType'],
-                "retStatus": 1,
-                "retMsg": "文件类型错误，请上传pdf或图片",
-                "result": {"creditLetter": {}}}  
-
-    res_info = {"flowId": info['flowId'],
-                "taskType": info['taskType'],
-                "retStatus": 0,
-                "retMsg": "处理成功",
-                "result": {"creditLetter": ocr_res}}
     return res_info
 
 
@@ -276,17 +216,6 @@ async def make_invoice_info(request: Request,
                             result={"custList": [], "brhList":[]},
                             retStatus=1,
                             retMsg=str(e))
-    elif info['taskType'] in "004":
-        logging.info(f"执行信用证任务")
-        try:
-            res_info = task_creditLetter(info)
-        except Exception as e:
-            logging.error(f"{info['flowId']} Error: {e}")
-            res_info = dict(flowId=info['flowId'],
-                            taskType=info['taskType'],
-                            result={"creditLetter": []},      
-                            retStatus=1,
-                            retMsg=str(e))    
     else:
         res_info = dict(flowId=info['flowId'],
                     taskType=info['taskType'],

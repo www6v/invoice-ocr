@@ -161,13 +161,15 @@ def output_contract(png_list, save_dir_path):
                 "content": message_content}]
 
 
-    ##### 
+    ##### qwen api
     file_path = f"{save_dir_path}/{png}"  ###
     biz_type = '1' ### 字符串
     MIME_type = 'image'
     data = bill_recognition(file_path, biz_type, MIME_type)
     output_dict = extract_content(data, biz_type)
-    ##### output_dict = qwen2_vl(messages, json_pattern)
+    
+    ##### 本地qwen 
+    # output_dict = qwen2_vl(messages, json_pattern)
     
 
     ocr_res_dict['contractNo'] = output_dict.get("合同编号", '')
@@ -226,4 +228,108 @@ def output_contract(png_list, save_dir_path):
     ocr_res_dict['buyerSocialNo'] = output_dict.get("购买方统一社会信用码", '')
     ocr_res_dict['sellerSocialNo'] = output_dict.get("销售方统一社会信用码", '')
     logging.info("合同数据解析成功")
+    return ocr_res_dict
+
+
+
+
+def output_creditLetter(png_list, save_dir_path):
+    ocr_res_dict = {}
+    message_content = []
+    for png in png_list:
+        message_content.append(
+                        {
+                            "type": "image",
+                            "image": "file://" + f"{save_dir_path}/{png}"
+                        })
+    message_content.append({"type":"text",
+                            "text":contract_prompt})
+    messages = [{"role":"user",
+                "content": message_content}]
+
+
+    ##### qwen api
+    file_path = f"{save_dir_path}/{png}"  ###
+    biz_type = '2' ### 字符串
+    MIME_type = 'image'
+    data = bill_recognition(file_path, biz_type, MIME_type)
+    output_dict = extract_content(data, biz_type)
+    
+    ##### 本地qwen 
+    # output_dict = qwen2_vl(messages, json_pattern)
+    
+
+    ##### 
+    # ocr_res_dict['contractNo'] = output_dict.get("合同编号", '')
+    # if "订单" in output_dict.get("合同类型", ''):
+    #     contract_type = "TIT02"
+    # else:
+    #     contract_type = "TIT01"
+    # ocr_res_dict['contractType'] = contract_type
+
+    # contract_date = re.findall(y_m_d_pattern,
+    #                            output_dict.get("签订日期", ''))
+    # contract_date_num = re.findall(r'\b\d{8}\b', output_dict.get("签订日期", ''))
+    # if contract_date:
+    #     year = re.findall(r'\d{4}年', contract_date[0])[0].replace("年", "")
+    #     month = re.findall(r'\d{1,2}月', contract_date[0])[0].replace("月", "").zfill(2)
+    #     day = re.findall(r'\d{1,2}[日号]', contract_date[0])[0].replace("日", "").replace("号", "").zfill(2)
+    #     contract_date = f"{year}{month}{day}"
+    # elif contract_date_num:
+    #     contract_date = contract_date_num[0]
+    # else:
+    #     contract_date = ""
+    # ocr_res_dict['contractDate'] = contract_date
+
+    # if "货物" in output_dict.get("贸易类型", ''):
+    #     trade_type = "TM01"
+    # elif "货服" in output_dict.get("贸易类型", ''):
+    #     trade_type = "TM03"
+    # elif "服务" in output_dict.get("贸易类型", ''):
+    #     trade_type = "TM02"
+    # else:
+    #     trade_type = ""
+    # ocr_res_dict['contractTradeType'] = trade_type
+    # try:
+    #     contract_amt = cn2an.cn2an(output_dict.get("合同总金额", '').replace(" ","").replace("元零","元").replace("角整","角").replace("圆","元").replace("园","元"), "smart")
+    # except:
+    #     contract_amt_chn = re.findall(hans_num_pattern,
+    #                             output_dict.get("合同总金额", ''))
+    #     contract_amt_num = re.findall(amt_num_pattern,
+    #                             output_dict.get("合同总金额", ''))
+    #     if contract_amt_chn and len(contract_amt_chn)>1:
+    #         try:
+    #             contract_amt = cn2an.cn2an(contract_amt_chn[0].replace("圆","元").replace("园","元"), "smart")
+    #         except:
+    #             contract_amt = ""
+    #     elif contract_amt_num and len(contract_amt_chn)>1:
+    #         try:
+    #             contract_amt = contract_amt_num[0]
+    #         except:
+    #             contract_amt = ""
+    #     else:
+    #         contract_amt = ""
+    # ocr_res_dict['contractAmt'] = contract_amt
+
+    # ocr_res_dict['buyerName'] = output_dict.get("购买方名称", '')
+    # ocr_res_dict['sellerName'] = output_dict.get("销售方名称", '')
+    # ocr_res_dict['buyerSocialNo'] = output_dict.get("购买方统一社会信用码", '')
+    # ocr_res_dict['sellerSocialNo'] = output_dict.get("销售方统一社会信用码", '')
+
+
+    logging.info("合同数据解析成功")
+
+
+
+    #####
+    ocr_res_dict['creditLetterNo'] = output_dict.get("信用证编号", '')
+    ocr_res_dict['creditLetterDate'] = output_dict.get("开证日期", '')
+    ocr_res_dict['creditLetterApplicant'] = output_dict.get("申请人", '')
+    ocr_res_dict['creditLetterProfits'] = output_dict.get("受益人", '')
+    ocr_res_dict['creditLetterAmount'] = output_dict.get("金额", '')
+    ocr_res_dict['advisingBank'] = output_dict.get("通知行", '')
+    ocr_res_dict['isNegotiated'] = output_dict.get("是否可议付", '')
+    ocr_res_dict['isTransfer'] = output_dict.get("是否可转让", '')
+    ocr_res_dict['isBonded'] = output_dict.get("是否可保税", '')
+
     return ocr_res_dict
