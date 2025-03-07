@@ -97,7 +97,7 @@ def task_contract(info):
     }"""
 
     print(type(info))
-    print(info['body']['fileId'])
+    # print(info['body']['fileId'])
 
     # file_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, info['body']['fileId']))
     file_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, info['body']['fileInfos'][0]['fileId']))
