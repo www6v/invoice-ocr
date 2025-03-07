@@ -166,9 +166,8 @@ def output_contract(png_list, save_dir_path):
     biz_type = 1
     MIME_type = 'image'
     data = bill_recognition(file_path, biz_type, MIME_type)
-    extract_content(data, biz_type)
+    output_dict = extract_content(data, biz_type)
     ##### output_dict = qwen2_vl(messages, json_pattern)
-    
     
 
     ocr_res_dict['contractNo'] = output_dict.get("合同编号", '')

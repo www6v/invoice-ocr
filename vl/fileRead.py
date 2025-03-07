@@ -152,5 +152,5 @@ if __name__ == "__main__":
 
     data = bill_recognition(file_path, biz_type, MIME_type)
 
-    extract_content(data, biz_type)
-
+    text_data = extract_content(data, biz_type)
+    print(type(text_data))
