@@ -53,6 +53,7 @@ def output_invoice(save_dir_path):
             logging.info(f"日期数据--{invoiceDate}")
             if invoiceDate:
                 invoiceDate = invoiceDate[0].replace('年', '').replace('月', '').replace('日', '')
+                invoiceDate = format_date(invoiceDate)  ##### 
             else:
                 invoiceDate = ""
             buyerSocialNo = re.findall(letter_num_pattern,
@@ -189,6 +190,7 @@ def output_contract(png_list, save_dir_path):
         contract_date = f"{year}{month}{day}"
     elif contract_date_num:
         contract_date = contract_date_num[0]
+        contract_date = format_date(contract_date) #####
     else:
         contract_date = ""
     ocr_res_dict['contractDate'] = contract_date
@@ -336,3 +338,33 @@ def output_creditLetter(png_list, save_dir_path):
     logging.info("信用证数据解析成功")
 
     return ocr_res_dict
+
+
+
+from datetime import datetime
+
+def format_date(date_string):
+    try:
+        # 常见的输入格式处理
+        formats = [
+            '%Y%m%d',         # 20240309
+            '%Y-%m-%d',       # 2024-03-09
+            '%Y/%m/%d',       # 2024/03/09
+            '%Y.%m.%d',       # 2024.03.09
+            '%d/%m/%Y',       # 09/03/2024
+            '%m/%d/%Y',       # 03/09/2024
+            '%Y-%m-%d %H:%M:%S'  # 2024-03-09 12:30:45
+        ]
+        
+        # 尝试不同的格式解析
+        for fmt in formats:
+            try:
+                return datetime.strptime(date_string, fmt).strftime('%Y-%m-%d')
+            except ValueError:
+                continue
+                
+        raise ValueError("无法识别的日期格式")
+        
+    except Exception as e:
+        return str(e)
+    

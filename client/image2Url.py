@@ -137,11 +137,13 @@ def invoiceResult(response):
             }
 
 
-def invokeContract(billUrl, taskType):
+def invokeContract(billUrl):
+    taskType = '002'
     response = invoke(billUrl, taskType)
     return contractResult(response)
 
-def invokeInvoice(billUrl, taskType):
+def invokeInvoice(billUrl):
+    taskType = '001'
     response = invoke(billUrl, taskType)
     return invoiceResult(response)
 
@@ -150,11 +152,11 @@ if __name__ == "__main__":
     # billUrl = 'https://telegraph-image-92x.pages.dev/file/b274deba01f752f233a88-a70e03baf946353f68.png'    
     # taskType = '004'
 
-    # billUrl = 'https://telegraph-image-92x.pages.dev/file/f756ee357defe5306605d-0d5e0328d8b101ad5f.png' 
+    # billUrl = 'https://telegraph-image-92x.pages.dev/file/7a84c7c1fbd4668bf1f18-c3a317e36b715b3649.png' 
     # taskType = '002'
     # invokeContract(billUrl, taskType)
 
-    billUrl = 'https://telegraph-image-92x.pages.dev/file/3a4ba0facd39cab09618a-fe2bfce84a8bc5abe3.png'
+    billUrl = 'https://telegraph-image-92x.pages.dev/file/f24edf5f00f0e9f7fd369-adadfc03a3441e3e23.png'
     taskType = '001'
-    invokeInvoice(billUrl, taskType)
+    invokeInvoice(billUrl)
 
