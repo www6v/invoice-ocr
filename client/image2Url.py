@@ -110,11 +110,17 @@ def invoke(billUrl, taskType):
 
 
 def contractResult(response):
+    contractAmt = response.json()['result']['contract']['contractAmt']
+    if contractAmt == '': 
+        contractAmt = 0
+    else:
+        contractAmt = float(contractAmt)      
+
     return {'contractNo' : response.json()['result']['contract']['contractNo'] ,
             'contractType' : response.json()['result']['contract']['contractType'], 
              'contractDate' : response.json()['result']['contract']['contractDate'],
              'contractTradeType': response.json()['result']['contract']['contractTradeType'],
-             'contractAmt': response.json()['result']['contract']['contractAmt'],
+             'contractAmt': contractAmt,
              'buyerName': response.json()['result']['contract']['buyerName'],
              'sellerName': response.json()['result']['contract']['sellerName'],
              'buyerSocialNo': response.json()['result']['contract']['buyerSocialNo'],
@@ -122,13 +128,20 @@ def contractResult(response):
 
 
 def invoiceResult(response):
+    invoiceAmt = response.json()['result']['invoiceList'][0]['invoiceAmt']
+    if invoiceAmt == '': 
+        invoiceAmt = 0
+    else:
+        invoiceAmt = float(invoiceAmt)  
+
+
     return {'invoiceType': response.json()['result']['invoiceList'][0]['invoiceType'] ,
             'invoiceNo': response.json()['result']['invoiceList'][0]['invoiceNo'], 
             'invoiceCode': response.json()['result']['invoiceList'][0]['invoiceCode'],
             'invoiceDate': response.json()['result']['invoiceList'][0]['invoiceDate'],
             'buyerSocialNo': response.json()['result']['invoiceList'][0]['buyerSocialNo'],
             'buyerName': response.json()['result']['invoiceList'][0]['buyerName'],
-            'invoiceAmt': response.json()['result']['invoiceList'][0]['invoiceAmt'],
+            'invoiceAmt': invoiceAmt,
             'sellerName': response.json()['result']['invoiceList'][0]['sellerName'],
             'sellerSocialNo': response.json()['result']['invoiceList'][0]['sellerSocialNo'],
             'invoiceAmtNoTax': response.json()['result']['invoiceList'][0]['invoiceAmtNoTax'],
@@ -152,10 +165,10 @@ if __name__ == "__main__":
     # billUrl = 'https://telegraph-image-92x.pages.dev/file/b274deba01f752f233a88-a70e03baf946353f68.png'    
     # taskType = '004'
 
-    billUrl = 'https://telegraph-image-92x.pages.dev/file/7a84c7c1fbd4668bf1f18-c3a317e36b715b3649.png' 
+    billUrl = 'https://telegraph-image-92x.pages.dev/file/7641d9df2fd003cd80bc0-7902d827dd98a9d3e5.png' 
     invokeContract(billUrl)
 
 
-    # billUrl = 'https://telegraph-image-92x.pages.dev/file/abeb1ef12283b1f4f8167-3064cc08744c08ddf3.png'
+    # billUrl = 'https://telegraph-image-92x.pages.dev/file/29312de673f4763f3600a-563b881fdd75994858.png'
     # invokeInvoice(billUrl)
 
