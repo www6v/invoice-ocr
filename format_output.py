@@ -188,9 +188,9 @@ def output_contract(png_list, save_dir_path):
         month = re.findall(r'\d{1,2}月', contract_date[0])[0].replace("月", "").zfill(2)
         day = re.findall(r'\d{1,2}[日号]', contract_date[0])[0].replace("日", "").replace("号", "").zfill(2)
         contract_date = f"{year}{month}{day}"
+        contract_date = format_date(contract_date) #####        
     elif contract_date_num:
         contract_date = contract_date_num[0]
-        contract_date = format_date(contract_date) #####
     else:
         contract_date = ""
     ocr_res_dict['contractDate'] = contract_date

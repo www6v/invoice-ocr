@@ -152,11 +152,10 @@ if __name__ == "__main__":
     # billUrl = 'https://telegraph-image-92x.pages.dev/file/b274deba01f752f233a88-a70e03baf946353f68.png'    
     # taskType = '004'
 
-    # billUrl = 'https://telegraph-image-92x.pages.dev/file/7a84c7c1fbd4668bf1f18-c3a317e36b715b3649.png' 
-    # taskType = '002'
-    # invokeContract(billUrl, taskType)
+    billUrl = 'https://telegraph-image-92x.pages.dev/file/7a84c7c1fbd4668bf1f18-c3a317e36b715b3649.png' 
+    invokeContract(billUrl)
 
-    billUrl = 'https://telegraph-image-92x.pages.dev/file/f24edf5f00f0e9f7fd369-adadfc03a3441e3e23.png'
-    taskType = '001'
-    invokeInvoice(billUrl)
+
+    # billUrl = 'https://telegraph-image-92x.pages.dev/file/abeb1ef12283b1f4f8167-3064cc08744c08ddf3.png'
+    # invokeInvoice(billUrl)
 
