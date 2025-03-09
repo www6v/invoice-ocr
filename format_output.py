@@ -163,7 +163,7 @@ def output_contract(png_list, save_dir_path):
 
     ##### qwen api
     file_path = f"{save_dir_path}/{png}"  ###
-    biz_type = '1' ### 字符串
+    biz_type = '1' ### 合同
     MIME_type = 'image'
     data = bill_recognition(file_path, biz_type, MIME_type)
     output_dict = extract_content(data, biz_type)
@@ -250,7 +250,7 @@ def output_creditLetter(png_list, save_dir_path):
 
     ##### qwen api
     file_path = f"{save_dir_path}/{png}"  ###
-    biz_type = '2' ### 字符串
+    biz_type = '2' ### 信用证
     MIME_type = 'image'
     data = bill_recognition(file_path, biz_type, MIME_type)
     output_dict = extract_content(data, biz_type)
@@ -317,7 +317,7 @@ def output_creditLetter(png_list, save_dir_path):
     # ocr_res_dict['sellerSocialNo'] = output_dict.get("销售方统一社会信用码", '')
 
 
-    logging.info("合同数据解析成功")
+    # logging.info("合同数据解析成功")
 
 
 
@@ -331,5 +331,8 @@ def output_creditLetter(png_list, save_dir_path):
     ocr_res_dict['isNegotiated'] = output_dict.get("是否可议付", '')
     ocr_res_dict['isTransfer'] = output_dict.get("是否可转让", '')
     ocr_res_dict['isBonded'] = output_dict.get("是否可保税", '')
+
+
+    logging.info("信用证数据解析成功")
 
     return ocr_res_dict
