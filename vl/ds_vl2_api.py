@@ -8,7 +8,7 @@ import json
 api_url = "https://api.siliconflow.com/v1/images/generate"  # wrong
 
 # 你的API密钥
-api_key = "sk-hioqapoqkyfwjobwoumzbhealcdzrxirbqkhbggcptgxvnnk"
+api_key = ""
 
 # 请求头，包含API密钥
 headers = {
